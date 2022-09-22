@@ -1,25 +1,24 @@
 import java.util.Scanner;
-class count
+class ArrayDemo3
 {
-    public static void main(String[] args) 
-    {
-        int n, x, count = 0, i = 0;
-        Scanner s = new Scanner(System.in);
-        n = s.nextInt();
-        int a[] = new int[n];
-        for(i = 0; i < n; i++)
-        {
-            a[i] = s.nextInt();
-        }
- 
-        x = s.nextInt();
-        for(i = 0; i < n; i++)
-        {
-            if(a[i] == x)
-            {
-                count++;
-            }
-        }
-        System.out.println(count);
-    }
+  public static void main(String args[])
+   {
+         Scanner sc=new Scanner(System.in);
+         int x[],i,n,k,c=0;
+		 n=sc.nextInt();
+
+         x=new int[n];
+
+		 //Reading of an array elements         
+         for(i=0;i<n;i++)
+           
+             x[i]=sc.nextInt();
+             k=sc.nextInt();
+         for(i=0;i<n;i++)
+          {
+              if(k==x[i])
+               c++;
+           }
+		 System.out.println(c);
+     }
 }
