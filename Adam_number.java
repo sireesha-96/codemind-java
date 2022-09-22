@@ -9,9 +9,9 @@ class Adam
         s1=n*n;
         while(n>0)
         {
-          r1=n%10;
-          res1=res1*10+r1;
-          n=n/10;
+            r1=n%10;
+            res1=res1*10+r1;
+            n=n/10;
         }
         s2=res1*res1;
         while(s2>0)
@@ -22,7 +22,7 @@ class Adam
         }
         if(s1==res2)
          System.out.println("True");
-        else 
+        else
          System.out.println("False");
     }
 }
