@@ -14,12 +14,14 @@ class ArrayDemo3
            {
              x[i]=sc.nextInt();
            }
-           for(i=0;i<n;i++)
+
+         for(i=0;i<n;i++)
           {
-              min=x[0];
-              if(x[i]<min)
-               min=x[i];
-           }
-		 System.out.println(min);
+             min=x[0];
+             if(x[i]<min)
+              min=x[i];
+          }
+			   System.out.println(min);
+       
      }
 }
