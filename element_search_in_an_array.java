@@ -9,15 +9,17 @@ class Array1
   x=new int[n];
   for ( i=0;i<n;i++)
    x[i]=sc.nextInt();
-  k=sc.nextInt();
+   k=sc.nextInt();
   for( i=0;i<n;i++)
   {
-      if(x[i]==k)
-        found=1;
-  }
-  if(found==1)
+   if(x[i]==k)
+    {
+     found=1;
+     }
+   }
+   if(found==1)
     System.out.println("True");
-else
+   else
     System.out.println("False");
  }
 }
