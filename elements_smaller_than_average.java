@@ -1,32 +1,27 @@
 import java.util.Scanner;
-class ArrayDemo3
+class Array1
 {
-  public static void main(String args[])
-   {
-         Scanner sc=new Scanner(System.in);
-         int x[],i,n,sum=0,count=0;
-         float av;
-		 n=sc.nextInt();
-
-         x=new int[n];
-
-		 //Reading of an array elements         
-         for(i=0;i<n;i++)
-           {
-             x[i]=sc.nextInt();
-           }
-
-         for(i=0;i<n;i++)
-          {
-              sum=sum+x[i];
-          }
-          av=sum/n;
-          for(i=0;i<n;i++)
-          {
-              if(x[i]<=av)
-               count++;
-          }
-          System.out.println(count);
+ public static void main(String args[])
+ {
+  Scanner sc=new Scanner(System.in);
+  int n,i,x[],sum=0,count=0;
+  float ave;
+  n=sc.nextInt();
+  x=new int[n];
+  for ( i=0;i<n;i++)
+  {
+   x[i]=sc.nextInt();
+  }
+  for( i=0;i<n;i++)
+  {
+   sum=sum+x[i];
+  }
+   ave=sum/n;
+   for(i=0;i<n;i++)
+   {  
+     if(x[i]<=ave)
+      count++;
    }
+      System.out.println(count);
+ }
 }
-          
