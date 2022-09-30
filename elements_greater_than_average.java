@@ -4,7 +4,7 @@ class Array1
  public static void main(String args[])
  {
   Scanner sc=new Scanner(System.in);
-  int n,i,x[],sum=0,count=0;
+  int n,i,x[],count=0,sum=0;
   float av;
   n=sc.nextInt();
   x=new int[n];
@@ -12,14 +12,14 @@ class Array1
    x[i]=sc.nextInt();
   for( i=0;i<n;i++)
   {
-    sum=sum+x[i];
+   sum=sum+x[i];
   }
-   av=sum/n;
-   for(i=0;i<n;i++)
-   {
-   if(x[i]>=av)
-    count++;
-   }
-    System.out.println(count);
- }
+  av=sum/n;
+  for(i=0;i<n;i++)
+  {
+      if(x[i]>=av)
+       count++;
+  }
+  System.out.println(count);
+  }
 }
