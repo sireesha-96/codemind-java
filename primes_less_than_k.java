@@ -1,42 +1,39 @@
 import java.util.Scanner;
-class Sample
+class Prime
 {
-    public static boolean isPrime(int n)
+ public static boolean prime(int n)
+ {
+  if(n<2)
+   return false;
+  int count=0;
+  for(int i=2;i<=Math.sqrt(n);i++)
+  {
+  if(n%i==0)
+   count++;
+   }
+  if(count==0)
+   return true;
+  else
+   return false;
+  }
+ public static void main(String args[])
+ {
+  int a,x[],i,k,count=0;
+  Scanner sc=new Scanner(System.in);
+  a=sc.nextInt();
+  x=new int[a];
+  for(i=0;i<a;i++)
+   x[i]=sc.nextInt();
+   k=sc.nextInt();
+  for(i=0;i<a;i++)
+  {
+    if( prime(x[i]))
     {
-        //prime logic write here.
-        if(n<2)
-           return false;
-        int count=0;
-       for(int i=2;i<=(int)Math.sqrt(n);i++)
-       {
-           if(n%i==0)
-           count++;
-       }    
-       if(count==0)
-          return true;
-       else
-           return false;
+     if(x[i]<=k)
+      count++;
     }
-    public static void main(String args[])
-    {
-        Scanner sc=new Scanner(System.in);
-        int n,x[],i,count=0,k;
-        n=sc.nextInt();
-        x=new int[n];
-        for(i=0;i<n;i++)
-          x[i]=sc.nextInt();
-        k=sc.nextInt();
-        
-        for(i=0;i<n;i++)
-        {
-           if(isPrime(x[i]))
-           {
-                if(x[i]<=k)
-                   count++;
-           }
-        }
-        System.out.println(count);
-        
-        
-    }
+  }
+  System.out.println(count);
+ }
 }
+ 
