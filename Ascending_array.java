@@ -9,7 +9,7 @@ class Array1
   x=new int[n];
   for ( i=0;i<n;i++)
    x[i]=sc.nextInt();
-  for( i=1;i<n-1;i++)
+  for( i=0;i<n-1;i++)
   {
    if(x[i]>=x[i+1])
     {
