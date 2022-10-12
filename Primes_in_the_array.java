@@ -18,20 +18,20 @@ class Prime
   }
  public static void main(String args[])
  {
-  int a,x[],c=0,i;
+  int a,x[],i,c=0;
   Scanner sc=new Scanner(System.in);
   a=sc.nextInt();
   x=new int[a];
   for(i=0;i<a;i++)
    x[i]=sc.nextInt();
-  for(i=0;i<a;i++)
+  for(i=0;i<a;i++) 
   {
-    if( prime(x[i]))
-    {
-        c++;
-    }
+  if( prime(x[i]))
+   c++;
   }
-   System.out.println(c);
-  }
+  System.out.println(c);
+ }
 }
+
+
  
