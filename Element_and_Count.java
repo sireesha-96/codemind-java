@@ -4,7 +4,7 @@ class Unique
  public static void main(String args[])
  {
   Scanner sc=new Scanner(System.in);
-  int n,i,j,x[],count=0,flag=0;
+  int n,i,j,x[],count=0;
   n=sc.nextInt();
   x=new int[n];
   for ( i=0;i<n;i++)
@@ -22,8 +22,8 @@ class Unique
        x[j]=-999;
        }
       }
-      System.out.print(x[i] +" "+ count+" ");
+      System.out.print(x[i] +" "+count+" ");
      }
- }
+    }
  }
 }
