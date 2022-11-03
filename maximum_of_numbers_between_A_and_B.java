@@ -15,15 +15,15 @@ class Array1
   {
    if(x[i]>=a&&x[i]<=b)
     {
-     count++;    
+     count++;
      max=x[0];
      if(x[i]>max)
       max=x[i];
      }
    }
-  if(count==0)
-   System.out.println("-1");
-  else
-   System.out.println(max);
+   if(count==0)
+    System.out.println("-1");
+   else
+    System.out.println(max);
  }
 }
